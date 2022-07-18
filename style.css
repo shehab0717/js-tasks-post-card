@@ -16,7 +16,7 @@ body{
     background-color: var(--bg-color)
 }
 .post-card{
-    width: 75%;
+    width: 600px;
     margin: 50px auto;
     border-radius: 20px;
     background-color: var(--card-bg-color)
@@ -99,4 +99,36 @@ body{
 
 .primary-text{
     color: var(--text-primary-color)
+}
+
+.switch{
+    display: inline-block;
+    width: 35px;
+    height: 15px;
+    border: 2px solid var(--text-dark-color);
+    background: black;
+    border-radius: 20px;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-left: 12px;
+}
+
+.switch::before{
+    content: '';
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid var(--text-dark-color);
+    top: -7px;
+    background-color: white;
+    position: absolute;
+}
+
+.switch-on::before{
+    right: -10px;
+}
+
+.switch-off::before{
+    left: -10px;
 }
